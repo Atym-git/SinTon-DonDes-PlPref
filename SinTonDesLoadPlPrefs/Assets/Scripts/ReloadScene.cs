@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ReloadScene : MonoBehaviour
 {
     [SerializeField] private KeyCode _reloadKeyCode = KeyCode.R;
-    void FixedUpdate()
+    private void Update()
     {
         if (Input.GetKeyDown(_reloadKeyCode))
         {
